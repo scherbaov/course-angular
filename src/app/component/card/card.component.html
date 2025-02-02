@@ -1,0 +1,12 @@
+<div>User</div>
+<ul>
+    @for (item of user; track item) {
+        <li><strong>id:</strong> {{item.id}}, 
+            <strong>Name</strong> {{item.name}} 
+            <strong>age: </strong> {{item.age}}
+            @if (item.surname){
+                <strong>surname: </strong> {{item.surname}}
+            }
+        </li>
+    }
+</ul>
